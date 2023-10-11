@@ -1,7 +1,9 @@
 {
 	"title": "Cool Title",
 	"store": {
-		"telegram": "https://t.me/wawceo"
+		"data": {
+			"telegram": "https://t.me/silvervirgi"
+		}
 	},
 	"top_portfolios": [
 		{
