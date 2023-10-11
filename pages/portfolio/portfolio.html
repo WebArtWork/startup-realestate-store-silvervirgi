@@ -1,0 +1,8 @@
+{% for portfolio in portfolios %}
+<h1>{{{portfolio.name}}}</h1>
+<img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
+{% for thumb in portfolio.thumbs %}
+<img src="{{{thumb}}}" alt="{{{portfolio.name}}}">
+{% endfor %}
+<pre>{{{portfolio.description}}}</pre>
+{% endfor %}

@@ -1,0 +1,8 @@
+<h1>{{{service.name}}}</h1>
+<img src="{{{service.thumb}}}" alt="{{{service.name}}}">
+{% for thumb in service.thumbs %}
+<div><img src="{{{thumb}}}" alt="{{{service.name}}}"></div>
+{% endfor %}
+<pre>
+	{{{service.description|safe}}}
+</pre>

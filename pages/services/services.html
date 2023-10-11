@@ -1,0 +1,9 @@
+{% for service in services %}
+<a href="/service/{{{service.id}}}">
+	<img src="{{{service.thumb}}}" alt="{{{service.name}}}" />
+	{{{service.name}}}
+	<div>
+		{{{service.short}}}
+	</div>
+</a>
+{% endfor %}
