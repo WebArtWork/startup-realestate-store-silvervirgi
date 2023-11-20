@@ -27,6 +27,7 @@ a {
 
 h2 {
     font-size: 24px;
+    line-height: 32px;
     font-weight: $semi-bold;
     text-transform: uppercase;
     margin: 0;
@@ -51,6 +52,7 @@ p {
     text-transform: uppercase;
     font-weight: $medium;
     background-color: transparent;
+    margin-top: 30px;
     
 }
 
@@ -82,6 +84,10 @@ p {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+img {
+    object-fit: cover;
 }
 
 .header {
@@ -226,11 +232,11 @@ p {
         flex-wrap: wrap;
         row-gap: 44px;
         column-gap: 64px;
-        padding: 0 0 100px;
+        padding: 100px 0;
         h2 {
             width: 100%;
             text-align: center;
-            margin-bottom: 24px;
+            // margin-bottom: 22px;
         }
         .features-row {
             display: flex;
@@ -245,12 +251,14 @@ p {
             max-width: 1350px;
             padding: 0 0 100px;
             .types-row {
-                column-gap: 34px;
+                // column-gap: 34px;
+                justify-content: space-between;
                 .img-container {
-                    width: calc(25% - 34px);
-                    height: initial;
+                    // height: 400px;
+                    // width: 316px;
                     img {
-                        height: 200px;
+                        height: 400px;
+                        width: 316px;
                         margin-bottom: 44px;
                     }
                 }
@@ -258,13 +266,24 @@ p {
         }
         &.project {
             max-width: 1350px;
+            padding: 0 0 100px;
             .types-row {
-                // width: 50%;
                 .img-container {
                     width: 50%;
-                    height: 389px;
+                    img {
+                        width: 100%;
+                        height: 389px; 
+                    }
                 }
             }  
+        }
+        &.progress {
+            justify-content: space-between;
+            .features-row {
+                width: 285px;
+                flex-direction: column;
+                text-align: center;
+            }
         }
         &.blog {
             justify-content: start;
@@ -290,12 +309,36 @@ p {
         //     margin-bottom: 24px;
         // }
     }
+    .box.info {
+        padding: 100px 64px;
+        color: $white;
+    }
+    .box.column {
+        flex-wrap: nowrap;
+        .column-left {
+            flex: 1;
+        }
+        .column-right {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        img {
+            width: 540px;
+            height: 540px;
+        }
+    }
     .box.types {
         padding: 100px 0;
         h2 {
             color: $white;
         }
     } 
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .container.features {
@@ -317,29 +360,33 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    video {
+        width: 100%;
+    }
     .img-container {
-        width: 370px;
-        height: 530px;
-        position: relative;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .btn-overlay {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            justify-content: center;
-            align-items: center;
-        }
-        &:hover .btn-overlay {
-            display: flex;
-        }
+        // width: 370px;
+        // height: 530px;
+        // position: relative;
+        // flex: 1;
+        // img {
+        //     width: 316px;
+        //     height: 400px;
+        //     object-fit: cover;
+        // }
+        // .btn-overlay {
+        //     display: none;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(0, 0, 0, 0.4);
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+        // &:hover .btn-overlay {
+        //     display: flex;
+        // }
     }
 }
 
