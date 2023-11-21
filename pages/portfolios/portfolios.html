@@ -1,4 +1,75 @@
-{% for portfolio in portfolios %}
+<section class="container types">
+	<section class="box special types">
+		<h2>Матові<br>натяжні стелі</h2>
+		<div class="owl-carousel owl-theme types-row">
+			<div class="img-container">
+				<img src="/template/img/4-11-2023-1.jpg">
+				<div class="btn-overlay">
+					<a class="btn btn-outline">Детально</a>
+				</div>
+			</div>
+			<div class="img-container">
+				<img src="/template/img/4-11-2023-2.jpg">
+				<div class="btn-overlay">
+					<a class="btn btn-outline">Детально</a>
+				</div>
+			</div>
+			<div class="img-container">
+				<img src="/template/img/27-07-2023-1.jpg">
+				<div class="btn-overlay">
+					<a class="btn btn-outline">Детально</a>
+				</div>
+			</div>
+			<div class="img-container">
+				<img src="/template/img/27-07-2023-2.jpg">
+				<div class="btn-overlay">
+					<a class="btn btn-outline">Детально</a>
+				</div>
+			</div>
+			<div class="img-container">
+				<img src="/template/img/27-07-2023-3.jpg">
+				<div class="btn-overlay">
+					<a class="btn btn-outline">Детально</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="box info">
+		<div class="types-text text">
+			<p>Матова натяжна стеля актуальна для будь-якого приміщення. Такі покриття не втрачають 
+				популярності, незважаючи на всі новинки. Класичні варіанти ніколи не вийдуть з моди, 
+				тому при вирішенні питання, яка стеля краще: багато хто віддає перевагу матовому 
+				покриттю. Матові фактури гармонують з будь-якими варіантами обробки підлоги та стін, 
+				меблями та інтер’єрними елементами.</p>
+			<p>Такі натяжні стелі являються надійними та довговічними, мають високий показник вологостійкості, 
+				підкреслять дизайн кімнати, завдяки широкому вибору кольорів та відтінків.</p>
+			</p>
+			<div class="d-flex justify-center">
+				<a class="btn primary">Замовити</a>
+			</div>
+		</div>
+	</section>
+</section>
+
+<script>
+	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+		loop:true,
+		items:3,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			}
+		}
+	});
+});
+</script>
+
+
+<!-- {% for portfolio in portfolios %}
 <a href="/portfolio/{{{portfolio.id}}}">
 	<h1>{{{portfolio.name}}}</h1>
 	<img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
@@ -6,4 +77,4 @@
 		{{{portfolio.short}}}
 	</div>
 </a>
-{% endfor %}
+{% endfor %} -->
