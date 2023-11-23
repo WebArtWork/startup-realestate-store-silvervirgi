@@ -101,6 +101,8 @@ p {
 }
 
 img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -211,8 +213,8 @@ img {
     padding-top: 98px;
     h1 {
         font-size: 90px;
-        font-weight: 300;
-        letter-spacing: 8px;
+        font-weight: 400;
+        letter-spacing: 4px;
         
     }
     h3 {
@@ -276,9 +278,6 @@ img {
                 display: flex;
                 flex-direction: column;
                 row-gap: 14px;
-                h2 {
-                    text-align: left;
-                }
                 .column-btn {
                     margin-top: auto;
                 }
@@ -320,10 +319,6 @@ img {
                 .img-container {
                     width: 50%;
                     height: 50vh;
-                    img {
-                        width: 100%;
-                        height: 100%; 
-                    }
                 }
             }  
         }
@@ -376,6 +371,19 @@ img {
             text-align: left;
         }
     }
+    .box.gallery {
+        .types-row {
+            row-gap: 44px;
+        }
+        .img-container {
+            width: 370px;
+            height: 245px;
+        }
+    }
+}
+
+.container .box .column-info h2 {
+    text-align: left;
 }
 
 .features-row .icon svg {
@@ -443,6 +451,20 @@ img {
 
 .container.types .box.info {
     padding: 0 64px 100px;
+}
+
+.viewer-img,
+.viewer-title,
+.viewer-navbar {
+    display: none !important;
+}
+
+.viewer-backdrop {
+    background-color: rgba(16, 19, 24, 0.9) !important;
+}
+
+.viewer-toolbar > ul > li {
+    border-radius: 0 !important;
 }
 
 
