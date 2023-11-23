@@ -104,6 +104,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .no-pd {
@@ -116,6 +117,10 @@ img {
 
 .no-mw {
     max-width: initial !important;
+}
+
+.bg-light {
+    background-color: $background-light;
 }
 
 .header {
@@ -210,7 +215,6 @@ img {
     position: relative;
     color: $white;
     text-align: center;
-    padding-top: 98px;
     h1 {
         font-size: 90px;
         font-weight: 400;
@@ -252,7 +256,7 @@ img {
         flex-wrap: wrap;
         row-gap: 44px;
         column-gap: 64px;
-        padding: 0 0 100px;
+        padding: 100px 0;
         h2 {
             width: 100%;
             text-align: center;
@@ -314,7 +318,6 @@ img {
         }
         &.project {
             max-width: 1350px;
-            padding: 0 0 100px;
             .types-row {
                 .img-container {
                     width: 50%;
@@ -324,12 +327,18 @@ img {
         }
         &.progress {
             justify-content: space-between;
+            padding: 100px 0 86px;
             .features-row {
                 width: 285px;
                 display: flex;
                 flex-direction: column;
                 row-gap: 34px;
                 text-align: center;
+                .number {
+                    color: #525A8F;
+                    font-size: 44px;
+                    font-weight: 700;
+                }
             }
         }
         &.blog {
@@ -365,7 +374,7 @@ img {
         }
     } 
     .box.guide {
-        padding: 100px 0;
+        padding: 100px 0 0;
         justify-content: flex-start;
         h2 {
             text-align: left;
@@ -378,13 +387,21 @@ img {
         .img-container {
             width: 370px;
             height: 245px;
+            cursor: zoom-in;
         }
+    }
+    .box.detail {
+        padding: 0 0 100px;
     }
 }
 
-.container .box .column-info h2 {
-    text-align: left;
+.container .box .column-info {
+    width: 100%;
+    h2 {
+        text-align: left;
+    }
 }
+
 
 .features-row .icon svg {
     max-width: 46px;
@@ -409,6 +426,10 @@ img {
 .container.service {
     margin-top: -190px;
     background-color: $primary-background-color;
+}
+
+.container.progress {
+    background-color: $background-light;
 }
 
 .text p {

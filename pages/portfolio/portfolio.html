@@ -8,34 +8,84 @@
 			<p>Ще один об'єкт було успішно завершено! Дякуємо Fiori di vita за довіру.</p>
 			<p>Матові натяжні стелі та прожекторі світильники додають простору та функціональності. Від початку роботи до її завершення ми на зв'язку із клієнтом, щоб втілити в життя ваші побажання та підказати готові рішення.Не зволікайте і замовляйте свою омріяну стелю.</p>
 			<div class="column-btn d-flex">
-				<a class="btn primary">Замовити</a>
+				<a class="btn primary">Замовити розрахунок</a>
 			</div>
 		</div>	
 	</section>
 </section>
 
+<section class="container progress">
+	<section class="box progress">
+		<h2>Переваги багаторівневих натяжних стель</h2>
+		<div class="features-row">
+			<span class="number">
+				01
+			</span>
+			<div class="features-text">
+				<p>Можливість втілення найкреативніших проектів.</p>
+			</div>
+		</div>
+		<div class="features-row">
+			<span class="number">
+				02
+			</span>
+			<div class="features-text">
+				<p>Швидкий та акуратний монтаж.</p>
+			</div>
+		</div>
+		<div class="features-row">
+			<span class="number">
+				03
+			</span>
+			<div class="features-text">
+				<p>Зручність та простота експлуатації.</p>
+			</div>
+		</div>
+	</section>
+</section>
+
 <section class="container">
-	<section class="box decision">
-		<h2>Фото з проекту</h2>
-		<div class="types-row wrap">
+	<section class="box gallery">
+		<div class="viewer-img">
+			<img id="image" src="/template/img/gallery_clients/picture.jpg" alt="Picture">
+		</div>
+		<div class="types-row wrap" id="images">
 			<div class="img-container">
-				<img src="/template/img/hero_img.png">
+				<img src="/template/img/gallery_clients/picture-1.jpg" alt="Picture 1">
 			</div>
 			<div class="img-container">
-				<img src="/template/img/hero_img.png">
+				<img src="/template/img/gallery_clients/picture-2.jpg" alt="Picture 2">
 			</div>
 			<div class="img-container">
-				<img src="/template/img/hero_img.png">
+				<img src="/template/img/gallery_clients/picture-3.jpg" alt="Picture 3">
 			</div>
 			<div class="img-container">
-				<img src="/template/img/hero_img.png">
+				<img src="/template/img/gallery_clients/picture-4.jpg" alt="Picture 4">
 			</div>
             <div class="img-container">
-				<img src="/template/img/hero_img.png">
+				<img src="/template/img/gallery_clients/picture-5.jpg" alt="Picture 5">
+			</div>
+			<div class="img-container">
+				<img src="/template/img/gallery_clients/picture-6.jpg" alt="Picture 6">
 			</div>
 		</div>
     </section>
 </section>
+
+<script>
+	$(document).ready(function(){
+		var $image = $('#image');
+
+		$image.viewer({
+			inline: true,
+			viewed: function() {
+				$image.viewer('zoomTo', 1);
+			}
+		});
+		var viewer = $image.data('viewer');
+		$('#images').viewer();
+	});
+</script>
 
 
 
