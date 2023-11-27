@@ -57,12 +57,12 @@
 	</section>
 </section>
 
-<section class="container">
-	<section class="box gallery gallery-view">
+<section class="container gallery-row" id="slide-container">
+	<section class="box gallery gallery-view" id="slide-item">
 		<div class="viewer-img">
 			<img id="image" src="/template/img/gallery_service/picture.jpg" alt="Picture">
 		</div>
-		<div class="types-row wrap" id="images">
+		<div class="owl-carousel img-carousel owl-theme types-row wrap" id="images">
 			<div class="img-container">
 				<img src="/template/img/gallery_service/picture-1.jpg" alt="Picture 1">
 			</div>
@@ -113,6 +113,41 @@
 		});
 		var viewer = $image.data('viewer');
 		$('#images').viewer();
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		function owlInitialize() {
+		if ($(window).width() < 1200) {
+			$('.img-carousel').addClass("owl-carousel");
+			$('.img-carousel').owlCarousel({
+				loop:true,    
+				nav: true,
+				dots: false,        
+				responsive:{
+					0:{
+						items:1
+					},
+					577:{
+						items:2
+					},
+					1201:{
+						items:3
+					}
+				}
+			});
+		}else{
+		$('#slide-item .owl-carousel').owlCarousel('destroy');
+		$('#slide-item .img-carousel').removeClass("owl-carousel");
+	}
+}
+	$(document).ready(function(e) {
+	owlInitialize();
+	});
+	$(window).resize(function() {
+	owlInitialize();
+	});
 	});
 </script>
 

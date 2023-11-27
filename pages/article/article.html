@@ -33,12 +33,12 @@
 	</section>
 </section>
 
-<section class="container">
-	<section class="box gallery">
+<section class="container gallery-row" id="slide-container">
+	<section class="box gallery" id="slide-item">
 		<div class="column-info text">
 			<h2>Вас також можуть зацікавити</h2>
 		</div>
-		<div class="types-row wrap">
+		<div class="owl-carousel img-carousel owl-theme types-row wrap">
 			<div class="img-container">
 				<img src="/template/img/gallery_services/1-4.jpg">
 				<div class="btn-overlay">
@@ -72,6 +72,41 @@
 		</div>
 	</section>
 </section>
+
+<script>
+	$(document).ready(function(){
+		function owlInitialize() {
+		if ($(window).width() < 1200) {
+			$('.img-carousel').addClass("owl-carousel");
+			$('.img-carousel').owlCarousel({
+				loop:true,    
+				nav: true,
+				dots: false,        
+				responsive:{
+					0:{
+						items:1
+					},
+					577:{
+						items:2
+					},
+					1201:{
+						items:3
+					}
+				}
+			});
+		}else{
+		$('#slide-item .owl-carousel').owlCarousel('destroy');
+		$('#slide-item .img-carousel').removeClass("owl-carousel");
+	}
+}
+	$(document).ready(function(e) {
+	owlInitialize();
+	});
+	$(window).resize(function() {
+	owlInitialize();
+	});
+	});
+</script>
 
 <!-- <h1>{{{article.name}}}</h1>
 <img src="{{{article.thumb}}}" alt="{{{article.name}}}">
