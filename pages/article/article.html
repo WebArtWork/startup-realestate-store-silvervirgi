@@ -1,5 +1,5 @@
-<h1>{{{article.name}}}</h1>
-<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+<!-- <h1>{{{article.name}}}</h1>
+<img src="{{{article.thumb}}}" alt="{{{article.name}}}"> -->
 
 {% if article.reference %}
 <a href="{{{article.reference}}}">{{{article.reference}}}</a>
@@ -20,7 +20,7 @@
             <p>
                 Натяжні стелі не надто вибагливі та не потребують надмірного догляду, проте, як чистити їх, щоб не пошкодити, чим мити, аби не завдати збитків своїй кишені завжди хвилює.
             </p>
-            <img src="/template/img/article/1-1.jpg">
+            <img src="{{{article.thumb}}}" alt="{{{article.name}}}">
             <h2>Чим мити/витирати натяжні стелі</h2>
             <p>
                 Насправді, щоб підтримувати стелю в чистоті достатньо просто хоча б раз на місяць протирати її сухою ганчіркою гладкої структури. Якщо бажаєте ретельніше дбати за чистотою можна також використовувати вологу серветку, але слідкуйте, аби після надмірного зволоження не залишились сліди розводів. Антистатичні властивості сучасної стелі дозволяють зводити догляд до мінімуму, тому хвилюватись не варто.
@@ -53,7 +53,7 @@
 
 			{% for article in articles %}
 			<div class="img-container">
-				<img src="/template/img/gallery_services/1-4.jpg">
+				<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
 				<div class="btn-overlay">
 					<a class="btn btn-outline" href="{{{article.url || '/article/' + article._id}}}">Читати</a>
 				</div>
@@ -63,28 +63,6 @@
 				</div>
 			</div>
 			{% endfor %}
-
-
-			<div class="img-container">
-				<img src="/template/img/gallery_services/1-6.jpg">
-				<div class="btn-overlay">
-					<a class="btn btn-outline">Читати</a>
-				</div>
-				<div class="types-text">
-                    <div class="text-sm date">13.11.2023</div>
-					<h3>Екологічночисті натяжні стелі</h3>
-				</div>
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_services/1-9.jpg">
-				<div class="btn-overlay">
-					<a class="btn btn-outline">Читати</a>
-				</div>
-				<div class="types-text">
-                    <div class="text-sm date">13.11.2023</div>
-					<h3>Яка стеля краще на кухні</h3>
-				</div>
-			</div>
 		</div>
 	</section>
 </section>
