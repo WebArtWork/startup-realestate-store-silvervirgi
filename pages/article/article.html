@@ -1,11 +1,22 @@
+<h1>{{{article.name}}}</h1>
+<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+
+{% if article.reference %}
+<a href="{{{article.reference}}}">{{{article.reference}}}</a>
+{% endif %}
+
 <section class="container">
 	<section class="box article">
 		<div class="column-info types-text text">
             <div class="date">13.11.2023</div>
-			<h1>Догляд за натяжними стелями</h1>
+			<h1>{{{article.name}}}</h1>
+
+			<pre>{{{article.description|safe}}}</pre>
+
+
 			<p>
                 Чи не кожен новий проект фахівці прикрашають ПВХ полотном. Це зручно, не дуже дорого, красиво та креативно. Але, навіть враховуючи те, що натяжні стелі виробляють з матеріалів, які не поглинають пил та не накопичують плісняву, однак чистити їх, рано чи пізно, все одно доводиться. Найчастіше стеля забруднюється на кухні, ну, зрозуміло, що приготування страв супроводжується плямами та розводами і саме тоді виникає питання “Чим та як чистити натяжну стелю?”. Так, дане питання дійсно є важливим та потребує обговорення, тому почнімо.
-            </p>      
+            </p>
             <p>
                 Натяжні стелі не надто вибагливі та не потребують надмірного догляду, проте, як чистити їх, щоб не пошкодити, чим мити, аби не завдати збитків своїй кишені завжди хвилює.
             </p>
@@ -19,17 +30,17 @@
             </p>
             <h2>Як мити натяжні стелі</h2>
             <p>Предмети та засоби, якими збираєтеся чистити ПВХ стелю не мають містити абразивних речовин (жорсткі серветки, нерозчинний порошок і таке інше). Добре використовувати мильний розчин, спеціальний поліроль, засіб для ручного миття посуду або десяти % спиртовий розчин.
-            </p>    
+            </p>
             <p>
                 Спосіб очищення також залежить від якості та складових матеріалів, з яких виготовлено натяжне полотно. Також слідкуйте, щоб глянцеву поверхню Ваш мийний засіб не зробив матовою. Стеля втратить своє віддзеркалення та не матиме колишнього ефекту (найчастіше це може статися від порошків).
-            </p>   
+            </p>
             <p>
                 Якщо Ви не впевнені щодо вибору мийного засобу слід випробувати його на клаптиках плівки, що часто залишаються після монтажу стелі. Тоді Ви знатимете напевне, яку рідину слід використовувати.
-            </p>    
+            </p>
             <p>
                 Легкими рухами протирайте натяжне полотно, аби не завдати деформації, використовуйте воду невисокої температури (до 40º) і Ваша стеля від компанії “SilverVirgi” сяятиме новими, ідеально чистими фарбами!
             </p>
-        </div>	
+        </div>
 	</section>
 </section>
 
@@ -39,16 +50,21 @@
 			<h2>Вас також можуть зацікавити</h2>
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap">
+
+			{% for article in articles %}
 			<div class="img-container">
 				<img src="/template/img/gallery_services/1-4.jpg">
 				<div class="btn-overlay">
-					<a class="btn btn-outline">Читати</a>
+					<a class="btn btn-outline" href="{{{article.url || '/article/' + article._id}}}">Читати</a>
 				</div>
 				<div class="types-text">
                     <div class="text-sm date">13.11.2023</div>
-					<h3>Декоративні перегородки</h3>
+					<h3>{{{article.name}}}</h3>
 				</div>
-			</div>			
+			</div>
+			{% endfor %}
+
+
 			<div class="img-container">
 				<img src="/template/img/gallery_services/1-6.jpg">
 				<div class="btn-overlay">
@@ -58,7 +74,7 @@
                     <div class="text-sm date">13.11.2023</div>
 					<h3>Екологічночисті натяжні стелі</h3>
 				</div>
-			</div>			
+			</div>
 			<div class="img-container">
 				<img src="/template/img/gallery_services/1-9.jpg">
 				<div class="btn-overlay">
@@ -79,9 +95,9 @@
 		if ($(window).width() < 1200) {
 			$('.img-carousel').addClass("owl-carousel");
 			$('.img-carousel').owlCarousel({
-				loop:true,    
+				loop:true,
 				nav: true,
-				dots: false,        
+				dots: false,
 				responsive:{
 					0:{
 						items:1
@@ -107,10 +123,3 @@
 	});
 	});
 </script>
-
-<!-- <h1>{{{article.name}}}</h1>
-<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-<pre>{{{article.description|safe}}}</pre>
-{% if article.reference %}
-<a href="{{{article.reference}}}">{{{article.reference}}}</a>
-{% endif %} -->
