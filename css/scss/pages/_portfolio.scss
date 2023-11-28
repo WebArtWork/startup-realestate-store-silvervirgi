@@ -13,6 +13,11 @@ body {
     letter-spacing: 2px;
 }
 
+pre {
+    font-family: 'Inter', sans-serif;
+    white-space: wrap;
+}
+
 main {
     width: 100%;
 }
@@ -477,6 +482,10 @@ img {
             display: flex;
             flex-direction: column;
             row-gap: 14px;
+            h2 {
+                font-size: 22px;
+                text-transform: none;
+            }
             img {
                 max-height: 550px;
                 margin: 14px 0 28px;
