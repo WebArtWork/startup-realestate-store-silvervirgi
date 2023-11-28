@@ -321,7 +321,7 @@ img {
 
 .page-subtitle {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
     font-weight: 300;
 }
 
@@ -443,7 +443,9 @@ img {
     } 
     .box.gallery {
         .types-row {
-            row-gap: 44px;
+            row-gap: 45px;
+            column-gap: 45px;
+            justify-content: flex-start;
         }
         .img-container {
             width: 370px;
@@ -831,6 +833,10 @@ img {
         margin-left: 15px;
         padding-bottom: 30px;
     }
+    .container .box.gallery .types-row {
+        row-gap: 30px;
+        column-gap: 30px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -893,6 +899,9 @@ img {
     }
     .container .box.gallery .img-container {
         width: 335px;
+    }
+    .container .box.gallery .img-container img {
+        height: 225px;
     }
 }
 

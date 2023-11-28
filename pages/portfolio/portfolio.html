@@ -1,18 +1,11 @@
 <section class="container">
 	<section class="box column">
         <div class="column-img">
-			<img src="/template/img/gallery_portfolio/portfolio_image.jpg">
+			<img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
 		</div>
 		<div class="column-info text">
-			<h1>Матові натяжні стелі</h1>
-			<p>Матова натяжна стеля актуальна для будь-якого приміщення. Такі покриття не втрачають 
-				популярності, незважаючи на всі новинки. Класичні варіанти ніколи не вийдуть з моди, 
-				тому при вирішенні питання, яка стеля краще: багато хто віддає перевагу матовому 
-				покриттю. Матові фактури гармонують з будь-якими варіантами обробки підлоги та стін, 
-				меблями та інтер’єрними елементами.</p>
-			<p>Такі натяжні стелі являються надійними та довговічними, мають високий показник вологостійкості, 
-				підкреслять дизайн кімнати, завдяки широкому вибору кольорів та відтінків.</p>
-			</p>
+			<h1>{{{portfolio.name}}}</h1>
+			{{{portfolio.description|safe}}}
 			<div class="column-btn d-flex">
 				<a class="btn primary">Замовити розрахунок</a>
 			</div>
@@ -22,28 +15,12 @@
 
 <section class="container">
 	<section class="box gallery gallery-view">
-		<div class="viewer-img">
-			<img id="image" src="/template/img/gallery_portfolio/picture.jpg" alt="Picture">
-		</div>
 		<div class="types-row wrap" id="images">
+			{% for thumb in portfolio.thumbs %}
 			<div class="img-container">
-				<img src="/template/img/gallery_portfolio/picture-1.jpg" alt="Picture 1">
+				<img src="{{{thumb}}}" alt="{{{portfolio.name}}}">
 			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_portfolio/picture-2.jpg" alt="Picture 2">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_portfolio/picture-3.jpg" alt="Picture 3">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_portfolio/picture-4.jpg" alt="Picture 4">
-			</div>
-            <div class="img-container">
-				<img src="/template/img/gallery_portfolio/picture-5.jpg" alt="Picture 5">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_portfolio/picture-6.jpg" alt="Picture 6">
-			</div>
+			{% endfor %}
 		</div>
     </section>
 </section>

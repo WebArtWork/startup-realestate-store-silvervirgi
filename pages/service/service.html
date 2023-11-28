@@ -5,9 +5,9 @@
 		</div>
 		<div class="column-info text">
 			<h1>{{{service.name}}}</h1>
-			<pre>
+			<div class="main-text-wrapper">
 				{{{service.descriptionShort|safe}}}
-			</pre>
+			</div>
 			<div class="column-btn d-flex">
 				<a class="btn primary">Замовити розрахунок</a>
 			</div>
@@ -17,7 +17,7 @@
 
 <section class="container progress">
 	<section class="box progress">
-		<h2>Переваги багаторівневих натяжних стель</h2>
+		<h2>Переваги {{{service.short}}}</h2>
 		<div class="features-row">
 			<span class="icon">
 				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hexagon-number-1" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#636797" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -59,28 +59,10 @@
 
 <section class="container gallery-row" id="slide-container">
 	<section class="box gallery gallery-view" id="slide-item">
-		<div class="viewer-img">
-			<img id="image" src="/template/img/gallery_service/picture.jpg" alt="Picture">
-		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap" id="images">
 			{% for thumb in service.thumbs %}
 			<div class="img-container">
-				<img src="/template/img/gallery_service/picture-1.jpg" alt="Picture 1">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_service/picture-2.jpg" alt="Picture 2">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_service/picture-3.jpg" alt="Picture 3">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_service/picture-4.jpg" alt="Picture 4">
-			</div>
-            <div class="img-container">
-				<img src="/template/img/gallery_service/picture-5.jpg" alt="Picture 5">
-			</div>
-			<div class="img-container">
-				<img src="/template/img/gallery_service/picture-6.jpg" alt="Picture 6">
+				<img src="{{{thumb}}}" alt="{{{service.name}}}">
 			</div>
 			{% endfor %}
 		</div>
@@ -90,8 +72,15 @@
 <section class="container">
 	<section class="box detail">
 		<div class="column-info text">
-			{{{service.description|safe}}}	
-		</div>	
+			{{{service.description1|safe}}}	
+		</div>
+		<div class="column-info text">
+			{{{service.description2|safe}}}	
+		</div>
+		<div class="column-info text">
+			<h2>Ціни на послуги компанії <span>SilverVirgi</span></h2>
+			<p>Ціна – один з ключових критеріїв, на підставі якого клієнт робить свій вибір на користь тієї або іншої компанії-установника натяжних стель в Кам'янці-Подільському. Остаточна сума, необхідна для монтажу натяжних стель саме у вашому приміщенні, залежить від багатьох чинників і розраховується безпосередньо виконавцем після обговорення всіх деталей.</p>
+		</div>
 	</section>
 </section>
 

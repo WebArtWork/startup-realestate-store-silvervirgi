@@ -1,10 +1,17 @@
 {
 	"name": "portfolio",
 	"portfolio": {
-		"id": "/portfolio",
-        "thumb": "https://neryxomka.com/template/img/welcome.png",
-        "thumbs": ["https://neryxomka.com/template/img/welcome.png"],
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-		"name": "andrey.lizivinskiy"
+		"url": "/portfolio",
+        "thumb": "/template/img/gallery_portfolio/picture-1.jpg",
+        "thumbs": [
+			"/template/img/gallery_portfolio/picture-1.jpg",
+			"/template/img/gallery_portfolio/picture-2.jpg",
+			"/template/img/gallery_portfolio/picture-3.jpg",
+			"/template/img/gallery_portfolio/picture-4.jpg",
+			"/template/img/gallery_portfolio/picture-5.jpg",
+			"/template/img/gallery_portfolio/picture-6.jpg"
+		],
+		"description": "<p>Матова натяжна стеля актуальна для будь-якого приміщення. Такі покриття не втрачають популярності, незважаючи на всі новинки. Класичні варіанти ніколи не вийдуть з моди, тому при вирішенні питання, яка стеля краще: багато хто віддає перевагу матовому покриттю. Матові фактури гармонують з будь-якими варіантами обробки підлоги та стін, меблями та інтер’єрними елементами.</p><p>Такі натяжні стелі являються надійними та довговічними, мають високий показник вологостійкості, підкреслять дизайн кімнати, завдяки широкому вибору кольорів та відтінків.</p>",
+		"name": "Матові натяжні стелі"
 	}
 }
