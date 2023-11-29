@@ -76,7 +76,7 @@ p {
     font-weight: $medium;
     background-color: transparent;
     margin-top: 30px;
-    
+
 }
 
 .btn.primary {
@@ -263,7 +263,7 @@ img {
 .hero-section {
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url('/template/img/hero_img.jpeg');
+    background-image: url('/silvervirgi/img/hero_img.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,7 +273,7 @@ img {
     align-items: center;
     padding: 0 0 190px;
     &.service {
-        background-image: url('/template/img/background_image.jpg');
+        background-image: url('/silvervirgi/img/background_image.jpg');
     }
 }
 
@@ -287,7 +287,7 @@ img {
         line-height: 1;
         letter-spacing: 18px;
         // text-transform: none;
-        
+
     }
     h3 {
         font-size: 20px;
@@ -327,10 +327,10 @@ img {
 
 .container {
     padding: 0 44px;
-    position: relative; 
+    position: relative;
     .box {
         max-width: 1200px;
-        margin: auto; 
+        margin: auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -388,7 +388,7 @@ img {
                     width: 50%;
                     height: 50vh;
                 }
-            }  
+            }
         }
         &.progress {
             justify-content: space-between;
@@ -423,7 +423,7 @@ img {
                         height: 200px;
                     }
                 }
-            }  
+            }
         }
     }
     .box.types {
@@ -440,7 +440,7 @@ img {
                 height: 100%;
             }
         }
-    } 
+    }
     .box.gallery {
         .types-row {
             row-gap: 45px;
@@ -451,7 +451,7 @@ img {
             width: 370px;
             img {
                 height: 245px;
-            }    
+            }
         }
         .types-text {
             background-color: $white;
@@ -519,7 +519,7 @@ img {
 
 .container.features {
     margin-top: -190px;
-    background-image: url('/template/img/background-blue.png');
+    background-image: url('/silvervirgi/img/background-blue.png');
     background-position: 0 190px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -530,7 +530,7 @@ img {
 }
 
 .container.types {
-    background-image: url('/template/img/background-blue.png');
+    background-image: url('/silvervirgi/img/background-blue.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% 630px;
@@ -617,7 +617,7 @@ img {
 
 
 // Owl carusel
-  
+
 .owl-item .item {
     margin: 0 60px;
     p {
@@ -633,7 +633,7 @@ img {
     padding: 0 15px;
 }
 
-.container .owl-carousel .owl-nav button.owl-next, 
+.container .owl-carousel .owl-nav button.owl-next,
 .container .owl-carousel .owl-nav button.owl-prev {
     background-color: #636797 !important;
     font-size: 22px !important;
@@ -660,7 +660,7 @@ img {
 // .owl-carousel .owl-stage-outer {
 //     margin-left: 30px;
 //     padding-bottom: 10px;
-// } 
+// }
 
 // Accordion
 
@@ -687,7 +687,7 @@ img {
 .tab input:checked ~ .tab__content {
     max-height: 10rem;
 }
-  
+
 /* Visual styles */
 .accordion {
     overflow: hidden;
@@ -744,7 +744,7 @@ img {
 .responsive-menu{
     display: none;
 }
-    
+
 .responsive-menu.expand {
     display: flex !important;
     flex-direction: column;
@@ -756,7 +756,7 @@ img {
     height: 100%;
     padding: 170px 30px 120px;
     background-color: white;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .mobile-menu-btn svg,
@@ -912,7 +912,7 @@ img {
     }
     .container .box.column video, .container .box.column .column-img {
         width: 540px;
-    } 
+    }
     .container .box,
     .container .box.features {
         max-width: 540px;
@@ -962,7 +962,7 @@ img {
     }
     .container .box.column video, .container .box.column .column-img {
         width: 100%;
-    } 
+    }
     .container .box,
     .container .box.features {
         max-width: 100%;
@@ -986,7 +986,7 @@ img {
     .section-text h3 {
         font-size: 13px;
         letter-spacing: 4px;
-    } 
+    }
     .section-text h1 {
         font-size: 24px;
         letter-spacing: 10px;
@@ -1002,6 +1002,3 @@ img {
         width: 100%;
     }
 }
-
-
-
