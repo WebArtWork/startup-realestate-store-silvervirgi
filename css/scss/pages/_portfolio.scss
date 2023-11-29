@@ -91,10 +91,11 @@ p {
 .btn-outline {
     border: 1px solid $white;
     color: $white;
-    // &:hover {
-    //     background-color: $white;
-    //     color: $primary-color;
-    // }
+}
+
+.btn-outline.white:hover {
+    background-color: $white;
+    color: $dark;
 }
 
 .btn-outline.primary {
