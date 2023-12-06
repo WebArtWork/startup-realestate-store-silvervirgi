@@ -247,10 +247,14 @@ img {
                 color: $white;
                 font-size: 14px;
                 font-weight: 300;
+                white-space: nowrap;
                 &:hover {
                     text-decoration: underline;
                 }
             }
+        }
+        .section-title {
+            white-space: nowrap;
         }
     }
 }
@@ -495,7 +499,7 @@ img {
             }
             img {
                 max-height: 550px;
-                margin: 14px 0 28px;
+                margin: 14px 0;
             }
         }
     }

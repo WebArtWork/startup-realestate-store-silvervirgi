@@ -1,5 +1,12 @@
 {
 	"name": "portfolios",
+	"store": {
+		"data": {
+			"telegram": "https://t.me/DenysPrysyazhnyy",
+			"instagram": "https://instagram.com/silvervirgipotolok",
+			"phone": "tel:+380988002060"
+		}
+	},
 	"portfolios": [
 		{
 			"url": "/portfolio",

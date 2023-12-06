@@ -2,8 +2,8 @@
 	"title": "Cool Title",
 	"store": {
 		"data": {
-			"telegram": "https://t.me/irynaprysyazhna",
-			"instagram": "https://instagram.com/irynaprysyazhnapotolok",
+			"telegram": "https://t.me/DenysPrysyazhnyy",
+			"instagram": "https://instagram.com/silvervirgipotolok",
 			"phone": "tel:+380988002060"
 		}
 	},
@@ -24,7 +24,7 @@
 			"name": "portfolio"
 		}
 	],
-	"portfolios": [
+	"topPortfolios": [
 		{
 			"url": "/portfolio",
 			"thumb": "/irynaprysyazhna/img/gallery_portfolios/1-1.jpg",
