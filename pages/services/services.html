@@ -13,7 +13,7 @@
 			</p>
 			<p>Надаємо гарантію на матеріали та роботу — 10 років!</p>
 			<div class="column-btn d-flex">
-				<a class="btn primary" href="{{{store.data.phone}}}">Замовити розрахунок</a>
+				<a class="btn primary" href="tel:+380988002060">Замовити розрахунок</a>
 			</div>
 		</div>
 	</section>
@@ -62,17 +62,19 @@
 </section>
 
 <section class="container">
-	{% for category in categories %}
+	{% for category in servicesByTag %}
 	<section class="box gallery">
 		<div class="column-info">
 			<h1>{{{category.name}}}</h1>
 			<p class="page-subtitle">{{{category.short}}}</p>
 			<div class="d-flex">
-				<a class="btn primary" href="{{{store.data.phone}}}">Замовити розрахунок</a>
+				<a class="btn primary" href="tel:+380988002060">Замовити розрахунок</a>
 			</div>
 		</div>
+		{% endfor %}
 		<div class="types-row wrap">
-			{% for service in category.services %}
+			{% for category in servicesByTag %}
+			{% for service in category.tags %}
 			<div class="img-container">
 				<img src="{{{service.thumb}}}" alt="{{{service.name}}}">
 				<div class="btn-overlay">
@@ -83,9 +85,9 @@
 				</div>
 			</div>
 			{% endfor %}
+			{% endfor %}
 		</div>
 	</section>
-	{% endfor %}
 </section>
 
 <section class="container">
