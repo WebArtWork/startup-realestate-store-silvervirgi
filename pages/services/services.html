@@ -75,6 +75,7 @@
 		<div class="types-row wrap">
 			{% for category in servicesByTag %}
 			{% for service in category.tags %}
+			{% for service in services %}
 			<div class="img-container">
 				<img src="{{{service.thumb}}}" alt="{{{service.name}}}">
 				<div class="btn-overlay">
@@ -84,6 +85,7 @@
 					<h3>{{{service.name}}}</h3>
 				</div>
 			</div>
+			{% endfor %}
 			{% endfor %}
 			{% endfor %}
 		</div>
