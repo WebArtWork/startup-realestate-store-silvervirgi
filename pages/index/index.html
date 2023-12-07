@@ -223,7 +223,7 @@
 			</div>
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap">
-			{% for service in services %}
+			{% for service in topServices %}
 			<div class="img-container">
 				<img src="{{{service.thumb}}}" alt="{{{service.name}}}">
 				<div class="btn-overlay">
@@ -295,7 +295,7 @@
 			<img id="image" src="/irynaprysyazhna/img/gallery_portfolio/picture-1.jpg" alt="Picture">
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap" id="images">
-			{% for portfolio in top_portfolios %}
+			{% for portfolio in topPortfolios %}
 			<div class="img-container item">
 				<img id="image" src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
 			</div>
@@ -359,7 +359,7 @@
 			</div>
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap">
-			{% for article in articles %}
+			{% for article in topArticles %}
 			<div class="img-container item">
 				<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
 				<div class="btn-overlay">
