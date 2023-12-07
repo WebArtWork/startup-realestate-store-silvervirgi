@@ -62,20 +62,18 @@
 </section>
 
 <section class="container">
-	{% for category in servicesByTag %}
+	{% for tag in servicesByTag %}
 	<section class="box gallery">
 		<div class="column-info">
-			<h1>{{{category.name}}}</h1>
-			<p class="page-subtitle">{{{category.short}}}</p>
+			<h1>{{{tag.name}}}</h1>
+			<p class="page-subtitle">{{{tag.description}}}</p>
 			<div class="d-flex">
 				<a class="btn primary" href="tel:+380988002060">Замовити розрахунок</a>
 			</div>
 		</div>
-		{% endfor %}
+
 		<div class="types-row wrap">
-			{% for category in servicesByTag %}
-			{% for service in category.tags %}
-			{% for service in services %}
+			{% for service in tag.services %}
 			<div class="img-container">
 				<img src="{{{service.thumb}}}" alt="{{{service.name}}}">
 				<div class="btn-overlay">
@@ -86,10 +84,9 @@
 				</div>
 			</div>
 			{% endfor %}
-			{% endfor %}
-			{% endfor %}
 		</div>
 	</section>
+	{% endfor %}
 </section>
 
 <section class="container">
