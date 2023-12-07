@@ -10,21 +10,7 @@
 	"servicesByTag": [
 		{
 			"name": "Фактури",
-			"description": "Фактури description",
-			"services": [
-				{
-					"url": "/service",
-					"short": "Багаторівневі",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-1.jpg",
-					"name": "Багаторівневі"
-				}
-			]
-		}
-	],
-	"servicesByCategory": [
-		{
-			"name": "Фактури",
-			"short": "Допоможемо підібрати варіант саме для Вас",
+			"description": "Допоможемо підібрати варіант саме для Вас",
 			"tags": [
 				{
 					"url": "/service",
@@ -66,7 +52,7 @@
 		},
 		{
 			"name": "Технології",
-			"short": "Втілимо в життя всі Ваші ідеї та побажання",
+			"description": "Втілимо в життя всі Ваші ідеї та побажання",
 			"services": [
 				{
 					"url": "/service",
@@ -108,7 +94,7 @@
 		},
 		{
 			"name": "Світлові рішення",
-			"short": "Важлива складова сучасних стель",
+			"description": "Важлива складова сучасних стель",
 			"services": [
 				{
 					"url": "/service",
