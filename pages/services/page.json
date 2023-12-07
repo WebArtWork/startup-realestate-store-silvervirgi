@@ -7,11 +7,25 @@
 			"phone": "tel:+380988002060"
 		}
 	},
-	"categories": [
+	"servicesByTag": [
+		{
+			"name": "Фактури",
+			"description": "Фактури description",
+			"services": [
+				{
+					"url": "/service",
+					"short": "Багаторівневі",
+					"thumb": "/irynaprysyazhna/img/gallery_services/1-1.jpg",
+					"name": "Багаторівневі"
+				}
+			]
+		}
+	],
+	"servicesByCategory": [
 		{
 			"name": "Фактури",
 			"short": "Допоможемо підібрати варіант саме для Вас",
-			"services": [
+			"tags": [
 				{
 					"url": "/service",
 					"short": "Матові",
