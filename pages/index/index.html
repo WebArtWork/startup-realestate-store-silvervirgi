@@ -355,7 +355,7 @@
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap" id="images">	
 			<div class="img-container item">
-				<img id="image" src="/irynaprysyazhna/img/gallery_portfolio/picture-1.jpg" alt="">
+				<img id="image" src="/irynaprysyazhna/img/gallery_portfolio/img-1.jpg" alt="">
 			</div>
 			<div class="img-container item">
 				<img id="image" src="/irynaprysyazhna/img/gallery_portfolio/picture-10.jpg" alt="">
@@ -413,7 +413,7 @@
 </section>
 
 <section class="container bg-light" id="slide-container">
-	<section class="box gallery" id="slide-item">
+	<section class="box gallery articles" id="slide-item">
 		<div class="column-info">
 			<h2 class="land-page-title">Більше про натяжні стелі</h2>
 			<p class="page-subtitle">ви можете дізнатися, відвідавши наш блог</p>
@@ -423,16 +423,13 @@
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap">
 			{% for article in topArticles %}
-			<div class="img-container item">
+			<a class="img-container item" href="{{{article.url || '/article/' + article._id}}}">
 				<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-				<div class="btn-overlay">
-					<a class="btn btn-outline" href="{{{article.url || '/article/' + article._id}}}">Читати</a>
-				</div>
 				<div class="types-text">
                     <div class="text-sm date">13.11.2023</div>
 					<h3>{{{article.name}}}</h3>
 				</div>
-			</div>
+			</a>
 			{% endfor %}
 		</div>
 	</section>
@@ -552,6 +549,15 @@
 	});
 </script>
 
+<!-- <script>
+	$(document).ready(function(){
+		$('.container .box.article .img-container').bind('hover', function(e) { 
+			e.preventDefault();
+			
+			$('.types-text').toggleClass('animated');
+		});
+	});
+</script> -->
 
 <!-- {% for portfolio in topPortfolios %}
 	<h1>{{{portfolio.name}}}</h1>

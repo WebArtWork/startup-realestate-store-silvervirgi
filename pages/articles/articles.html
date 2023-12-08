@@ -1,5 +1,5 @@
 <section class="container">
-	<section class="box gallery">
+	<section class="box gallery articles">
 		<div class="column-info">
 			<h2>Наш блог</h2>
 			<p class="page-subtitle">Ми розповімо Вам більше про види, особливості та монтаж натяжних стель, а також дамо поради <br>по догляду за ними.
@@ -7,16 +7,13 @@
 		</div>
 		<div class="types-row wrap">
 			{% for article in articles %}
-			<div class="img-container">
+			<a class="img-container" href="{{{article.url || '/article/' + article._id}}}">
 				<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-				<div class="btn-overlay">
-					<a class="btn btn-outline" href="{{{article.url || '/article/' + article._id}}}">Читати</a>
-				</div>
 				<div class="types-text">
                     <div class="text-sm date">13.11.2023</div>
 					<h3>{{{article.name}}}</h3>
 				</div>
-			</div>
+			</a>
 			{% endfor %}
 		</div>
 	</section>

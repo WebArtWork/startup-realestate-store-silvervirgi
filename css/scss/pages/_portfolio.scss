@@ -19,7 +19,7 @@ pre {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
-    margin: 14px 0;
+    margin: 0 0 14px;
 }
 
 main {
@@ -484,12 +484,44 @@ img {
             background-color: $white;
         }
     }
+    .box.articles {
+        .img-container {
+            display: flex;
+            img {
+                height: 330px;
+            }
+        }
+        .types-text {
+            background-color: rgba(42,45,50,0.6);
+            width: 100%;
+            // height: 82px;
+            color: #fff;
+            padding: 16px 30px;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            max-height: 82px;
+            overflow: hidden;
+            transition: max-height 2s ease-out;
+            h3 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
     .box.gallery-view .img-container {
         cursor: -webkit-zoom-in;
         cursor: zoom-in;
     }
     .box.detail {
         padding: 0 0 100px;
+        pre::first-line {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
     }
     .box.article {
         .column-info {
@@ -502,7 +534,7 @@ img {
             }
             img {
                 max-height: 550px;
-                margin: 14px 0;
+                margin: 14px 0 28px;
             }
         }
     }
@@ -514,6 +546,14 @@ img {
 
 .bg-light .box.gallery .types-text.abt {
     background-color: $background-light;
+}
+
+.container .box.articles .img-container:hover .types-text {
+    max-height: 100%;
+}
+
+.container .box.articles .img-container:hover .types-text h3 {
+    white-space: normal;
 }
 
 .container .box .column-info {
@@ -962,6 +1002,9 @@ img {
     .container .box.gallery .types-text {
         width: 180px;
     }
+    .container .box.articles .types-text {
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -994,6 +1037,9 @@ img {
     }
     .container .box.gallery .types-text {
         width: 220px;
+    }
+    .container .box.articles .types-text {
+        width: 100%;
     }
     .section-text h3 {
         font-size: 13px;

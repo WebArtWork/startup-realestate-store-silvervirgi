@@ -14,23 +14,20 @@
 {% endif %}
 
 <section class="container gallery-row" id="slide-container">
-	<section class="box gallery" id="slide-item">
+	<section class="box gallery articles" id="slide-item">
 		<div class="column-info text">
 			<h2>Вас також можуть зацікавити</h2>
 		</div>
 		<div class="owl-carousel img-carousel owl-theme types-row wrap">
 
 			{% for article in articles %}
-			<div class="img-container">
+			<a class="img-container" href="{{{article.url || '/article/' + article._id}}}">
 				<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-				<div class="btn-overlay">
-					<a class="btn btn-outline" href="{{{article.url || '/article/' + article._id}}}">Читати</a>
-				</div>
 				<div class="types-text">
                     <div class="text-sm date">13.11.2023</div>
 					<h3>{{{article.name}}}</h3>
 				</div>
-			</div>
+			</a>
 			{% endfor %}
 		</div>
 	</section>
