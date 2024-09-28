@@ -5,8 +5,8 @@
 		"price": 1200,
 		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/irynaprysyazhna/img/welcome.png",
-        "thumbs": ["https://neryxomka.com/irynaprysyazhna/img/welcome.png"],
+        "thumb": "https://neryxomka.comimg/welcome.png",
+        "thumbs": ["https://neryxomka.comimg/welcome.png"],
 		"name": "product"
 	}
 }

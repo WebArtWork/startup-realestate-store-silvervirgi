@@ -15,37 +15,37 @@
 				{
 					"url": "/service",
 					"short": "Матові",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-1.jpg",
+					"thumb": "img/gallery_services/1-1.jpg",
 					"name": "Матові"
 				},
 				{
 					"url": "/service",
 					"short": "Сатинові",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-2.jpg",
+					"thumb": "img/gallery_services/1-2.jpg",
 					"name": "Сатинові"
 				},
 				{
 					"url": "/service",
 					"short": "Глянцеві",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-3.jpg",
+					"thumb": "img/gallery_services/1-3.jpg",
 					"name": "Глянцеві"
 				},
 				{
 					"url": "/service",
 					"short": "Напівпрозорі",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-4.jpg",
+					"thumb": "img/gallery_services/1-4.jpg",
 					"name": "Напівпрозорі"
 				},
 				{
 					"url": "/service",
 					"short": "Фактурні",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-5.jpg",
+					"thumb": "img/gallery_services/1-5.jpg",
 					"name": "Фактурні"
 				},
 				{
 					"url": "/service",
 					"short": "Тканинні",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-6.jpg",
+					"thumb": "img/gallery_services/1-6.jpg",
 					"name": "Тканинні"
 				}
 			]
@@ -57,37 +57,37 @@
 				{
 					"url": "/service",
 					"short": "Багаторівневі",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-1.jpg",
+					"thumb": "img/gallery_services/1-1.jpg",
 					"name": "Багаторівневі"
 				},
 				{
 					"url": "/service",
 					"short": "Плинучі",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-2.jpg",
+					"thumb": "img/gallery_services/1-2.jpg",
 					"name": "Плинучі"
 				},
 				{
 					"url": "/service",
 					"short": "Тіньові",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-3.jpg",
+					"thumb": "img/gallery_services/1-3.jpg",
 					"name": "Тіньові"
 				},
 				{
 					"url": "/service",
 					"short": "Фотодрук",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-5.jpg",
+					"thumb": "img/gallery_services/1-5.jpg",
 					"name": "Фотодрук"
 				},
 				{
 					"url": "/service",
 					"short": "Приховані ніші",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-7.jpg",
+					"thumb": "img/gallery_services/1-7.jpg",
 					"name": "Приховані ніші"
 				},
 				{
 					"url": "/service",
 					"short": "\"Зоряне небо\"",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-9.jpg",
+					"thumb": "img/gallery_services/1-9.jpg",
 					"name": "\"Зоряне небо\""
 				}
 			]
@@ -99,19 +99,19 @@
 				{
 					"url": "/service",
 					"short": "Світлові лінії",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-4.jpg",
+					"thumb": "img/gallery_services/1-4.jpg",
 					"name": "Світлові лінії"
 				},
 				{
 					"url": "/service",
 					"short": "Магнітні трекові системи",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-6.jpg",
+					"thumb": "img/gallery_services/1-6.jpg",
 					"name": "Магнітні трекові системи"
 				},
 				{
 					"url": "/service",
 					"short": "LED стрічка",
-					"thumb": "/irynaprysyazhna/img/gallery_services/1-9.jpg",
+					"thumb": "img/gallery_services/1-9.jpg",
 					"name": "LED стрічка"
 				}
 			]
