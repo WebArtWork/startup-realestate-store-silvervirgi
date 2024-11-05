@@ -3,5 +3,10 @@
 	"build": {
 		"base": "/"
 	},
-	"fetch": {}
+	"fetch": {
+		"topProducts": "https://webart.work/api/commerce/topProducts",
+		"products": "https://webart.work/api/commerce/products",
+		"services": "https://webart.work/api/commerce/services",
+		"portfolios": "https://webart.work/api/commerce/portfolios"
+	}
 }
