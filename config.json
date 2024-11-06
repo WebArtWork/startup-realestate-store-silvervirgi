@@ -8,5 +8,21 @@
 		"products": "https://webart.work/api/commerce/products",
 		"services": "https://webart.work/api/commerce/services",
 		"portfolios": "https://webart.work/api/commerce/portfolios"
+	},
+	"remove": [
+		"portfolios",
+		"portfolio",
+		"services",
+		"service",
+		"products",
+		"product"
+	],
+	"generate": {
+		"services": "services",
+		"service/:id": "services",
+		"products": "products",
+		"product/:id": "products",
+		"portfolios": "portfolios",
+		"portfolio/:id": "portfolios"
 	}
 }
