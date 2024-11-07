@@ -24,6 +24,9 @@ jobs:
       - name: Build with waw
         run: waw build
 
+      - name: Remove content with waw
+        run: waw remove
+
       - name: Set up SSH
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}

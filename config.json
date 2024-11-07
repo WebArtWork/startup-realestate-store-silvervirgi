@@ -10,19 +10,17 @@
 		"portfolios": "https://webart.work/api/commerce/portfolios"
 	},
 	"remove": [
-		"portfolios",
-		"portfolio",
-		"services",
-		"service",
-		"products",
-		"product"
+		"article.html",
+		"portfolio.html",
+		"service.html",
+		"product.html"
 	],
 	"generate": {
 		"services": "services",
-		"service/:id": "services",
+		"service/:services.id": "service",
 		"products": "products",
-		"product/:id": "products",
+		"product/:products.id": "product",
 		"portfolios": "portfolios",
-		"portfolio/:id": "portfolios"
+		"portfolio/:portfolios.id": "portfolio"
 	}
 }
